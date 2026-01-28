@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* MAIN CARD */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* TEXTAREA */
+textarea {
+  height: 170px;
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1c38a5;
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* REAL */
+.result.real {
+  background: #dcfce7;
+  color: #166534;
+  border-left: 5px solid green;
+}
+
+/* FAKE */
+.result.fake {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-left: 5px solid red;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  background: #f1f1f1;
+  font-size: 14px;
+}

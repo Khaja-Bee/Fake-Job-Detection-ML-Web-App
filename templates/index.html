@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Job Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    🕵️ Fake Job Detection System
+    <p>Enter a job description to check if it's fake or real</p>
+</div>
+
+<div class="container">
+
+    <form method="POST">
+        <label>Job Description:</label>
+
+        <textarea name="job_description" placeholder="Paste job description here..." required></textarea>
+
+        <button type="submit">Check Job</button>
+
+        {% if result %}
+            <div class="result {{ css_class }}">{{ result }}</div>
+        {% endif %}
+    </form>
+
+</div>
+
+<div class="footer">
+    © 2025 Fake Job Detector | Made by RCEW
+</div>
+
+</body>
+</html>
+
