@@ -49,7 +49,7 @@ Project/
 
 Clone the repository:
 
-git clone https://github.com/your-username/fake-job-detection.git
+git clone https://github.com/Khaja-Bee/fake-job-detection.git
 
 
 Navigate to the project folder:
@@ -100,9 +100,10 @@ Enhance UI for better user experience
 
 👤 Author
 
-Khaja
+Khaja Bee
 Final Year Engineering Student
 Interested in Machine Learning, Data Analytics, and Web Development
 
 ⭐ If you like this project, don’t forget to star the repository!
+
 
