@@ -15,24 +15,25 @@ def home():
     if request.method == "POST":
         text = request.form.get("job_description", "").strip()
 
-        if text == "":
+        if not text:
             result = "Please enter a job description!"
             css_class = "fake"
         else:
             vec = vectorizer.transform([text])
-            pred = model.predict(vec)[0]
+            prediction = model.predict(vec)[0]
 
-            print("MODEL OUTPUT:", pred)
+            print("MODEL OUTPUT:", prediction)
 
-            if int(pred) == 1:
-                result = "❌ This job looks FAKE."
+            # 🔥 UPDATED LOGIC HERE
+            if prediction == 1:
+                result = "✅ This job looks FAKE."
                 css_class = "fake"
             else:
-                result = "✅ This job looks REAL."
+                result = "❌ This job looks REAL."
                 css_class = "real"
 
     return render_template("index.html", result=result, css_class=css_class)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
